@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Items List</h1>
+    <ul>
+        {% for item in items %}>
+        <li>{{ item.name }} - {{ item.price }}</li><br>
+        <t>{{ item.discription }}</t>
+        {% endfor %}
+    </ul>
+</body>
+</html>
